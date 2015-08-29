@@ -22,7 +22,7 @@ var req = http.request(options, function(resp) {
   });
 });
 req.on("error", function(err) {
-  console.log("Error::" + err.message);
+  console.error("Error::" + err.message);
 });
 
 req.end();
